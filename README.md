@@ -17,7 +17,7 @@ El lenguaje elegido para el TP3 es CAT, un lenguaje esotérico que basa su ejecu
 ~~~
 S -> L | F | SS | [S]
 L -> N | B
-N -> 0 | 1 | … | 9
+N -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 B -> true | false
 F -> dup | swap | drop | cat | cons | ifte | dip | eq | add | sub | mul | div
 ~~~
@@ -27,7 +27,7 @@ F -> dup | swap | drop | cat | cons | ifte | dip | eq | add | sub | mul | div
 
 <literal> ::= <num> | <bool>
 
-<num> ::= 0 | 1 | … | 9
+<num> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
 <bool> ::= true | false
 

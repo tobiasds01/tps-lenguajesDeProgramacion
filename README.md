@@ -62,3 +62,18 @@ funcion    = "dup" | "swap" | "drop" | "cat" | "cons" | "ifte" | "dip" |
              "eq" | "add" | "sub" | "mul" | "div" ;
 
 ~~~
+
+## TP 4
+Para el cuarto trabajo desarrollaremos el **Árbol semántico** y el **Diagrama de Conway** sobre la gramática planteada en el anterior ejercicio. El primero nos indica cómo podemos utilizar la gramática para llegar a las expresiones de nuestro lenguaje. Por otra parte, el segundo nos muestra el flujo que tiene nuestra gramática planteada.
+
+#### Árbol semántico
+Veremos un ejemplo de un árbol semántico para la siguiente expresión:
+~~~
+9 1 sub 8 swap eq true drop [ 2 dup mul ] [ 3 6 add ] ifte
+~~~
+En ella pasamos por varias funciones, números, un booleano y citas (los bloques de código delimitados por "[]"). Entonces:
+
+![Árbol semántico](Arbol-semantico.png)
+
+#### Diagrama de Conway
+![Diagrama de Conway](Diagrama-conway.png)

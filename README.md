@@ -33,20 +33,6 @@ F -> dup | swap | drop | cat | cons | ifte | dip | eq | add | sub | mul | div
 
 <función> ::= dup | swap | drop | cat | cons | ifte | dip | eq | add | sub | mul | div
 ~~~
-#### ABNF
-~~~
-expresion = {literal / funcion / "[" expresion "]"}
-
-literal = num / bool
-
-num = "0" / "1" / "2" / "3" / "4" / "5" / "6" / "7" / "8" / "9"
-
-bool = "true" / "false"
-
-funcion = "dup" / "swap" / "drop" / "cat" / "cons" / "ifte" / "dip" /
-          "eq" / "add" / "sub" / "mul" / "div"
-~~~
-
 #### EBNF
 ~~~
 programa = { expresion }* ;
@@ -62,6 +48,21 @@ funcion    = "dup" | "swap" | "drop" | "cat" | "cons" | "ifte" | "dip" |
              "eq" | "add" | "sub" | "mul" | "div" ;
 
 ~~~
+#### ABNF
+~~~
+expresion:  literal
+            funcion
+            [expresion]
+            λ
+
+literal: uno de  num bool
+
+num: uno de  0 1 2 3 4 5 6 7 8 9
+
+bool: uno de  true false
+
+funcion: uno de  dup swap drop cat cons ifte dip eq add sub mul div
+~~~
 
 ## TP 4
 Para el cuarto trabajo desarrollaremos el **Árbol semántico** y el **Diagrama de Conway** sobre la gramática planteada en el anterior ejercicio. El primero nos indica cómo podemos utilizar la gramática para llegar a las expresiones de nuestro lenguaje. Por otra parte, el segundo nos muestra el flujo que tiene nuestra gramática planteada.
@@ -75,5 +76,13 @@ En ella pasamos por varias funciones, números, un booleano y citas (los bloques
 
 ![Árbol semántico](Arbol-semantico.png)
 
-#### Diagrama de Conway
+#### Diagrama de: Programa
 ![Diagrama de Conway](Diagrama-conway.png)
+#### Diagrama de: Expresión
+![Diagrama de Conway: Expresión](Conway-expresion.png)
+#### Diagrama de: Función
+![Diagrama de Conway: Función](Conway-funcion.png)
+#### Diagrama de: Booleano
+![Diagrama de Conway: Booleano](Conway-bool.png)
+#### Diagrama de: Número
+![Diagrama de Conway: Número](Conway-num.png)

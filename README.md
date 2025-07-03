@@ -158,7 +158,7 @@ A nivel de tipos, el lenguaje es fuertemente tipado e implícito y admite única
 
 Algunos ejemplos de programas:
 #### 1:
-~~~
+```ruby
 {
     forjar x = 1;
 
@@ -171,14 +171,14 @@ Algunos ejemplos de programas:
 
     encantar(x);
 }
-~~~
+```
 Salida del programa:
 ~~~
 4
 ~~~
 
 #### 2:
-~~~
+```ruby
 {
     hechizo aumentarVAR_XvecesY(var, x, y) [
         conjurar (x) veces [
@@ -192,14 +192,14 @@ Salida del programa:
 
     encantar(ejemplo);
 }
-~~~
+```
 Salida del programa:
 ~~~
 70
 ~~~
 
 #### 3:
-~~~
+```ruby
 {
     forjar valor = 10;
 
@@ -220,7 +220,7 @@ Salida del programa:
     encantar(mayorA300);
     encantar(valor);
 }
-~~~
+```
 Salida del programa:
 ~~~
 Verdadero

@@ -122,13 +122,15 @@ A nivel de tipos, el lenguaje es fuertemente tipado e implícito y admite única
 <caracteres> ::= λ | <caracter><caracteres>
 <caracter> ::= <minuscula> | <mayuscula> | <numero> | <simbolo>
 
-<funcion> ::= hechizo <identificador>(<parametros>) <bloque>
+<funcion> ::= hechizo <identificador>(<vacio_o_parametros>) <bloque>
 
-<parametros> ::= λ | <identificador> | <identificador>, <parametros>
+<vacio_o_parametros> ::= λ | <parametros>
+<parametros> ::= <identificador> | <identificador>, <parametros>
 <bloque> ::= [<lista_sentencias>]
 
-<invocacion> ::= invocar <identificador>(<argumento>) | invocar <bloque>
-<argumento> ::= λ | <valor> | <valor>, <argumento>
+<invocacion> ::= invocar <identificador>(<vacio_o_argumento>) | invocar <bloque>
+<vacio_o_argumento> ::= λ | <argumento>
+<argumento> ::= <valor> | <valor>, <argumento>
 
 <repeticion> ::= conjurar (<valor_numerico>) veces <bloque>
 
